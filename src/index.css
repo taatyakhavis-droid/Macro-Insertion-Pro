@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom Utilities for Neon borders and glows */
+@layer utilities {
+  .border-neon {
+    border-color: #A100FF;
+  }
+  .shadow-neon {
+    box-shadow: 0 0 5px #A100FF, 0 0 20px #A100FF;
+  }
+  .focus-ring-neon {
+    outline: none;
+    box-shadow: 0 0 10px #A100FF;
+    border-color: #A100FF;
+  }
+}
